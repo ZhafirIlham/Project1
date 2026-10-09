@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portofolio personal Ilham Zhafir — Full Stack AI Engineer. Membangun pengalaman digital cerdas dengan AI dan teknologi web modern." />
+    <title>Ilham Zhafir — Full Stack AI Engineer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="components/navbar/navbar.css" />
+    <link rel="stylesheet" href="components/hero/hero.css" />
+    <link rel="stylesheet" href="components/about/about.css" />
+    <link rel="stylesheet" href="components/skills/skills.css" />
+    <link rel="stylesheet" href="components/projects/projects.css" />
+    <link rel="stylesheet" href="components/experience/experience.css" />
+    <link rel="stylesheet" href="components/testimonials/testimonials.css" />
+    <link rel="stylesheet" href="components/contact/contact.css" />
+    <link rel="stylesheet" href="components/footer/footer.css" />
+</head>
+
+<body>
+    <!-- Animated gradient background -->
+    <div class="bg-gradient" aria-hidden="true">
+        <span class="bg-orb bg-orb--1"></span>
+        <span class="bg-orb bg-orb--2"></span>
+        <span class="bg-orb bg-orb--3"></span>
+    </div>
+
+    <!-- Floating particles -->
+    <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar" id="navbar">
+        <nav class="navbar__inner container">
+            <a href="#hero" class="navbar__brand">
+                <span class="navbar__logo">IZ</span>
+                <span class="navbar__name">Ilham Zhafir</span>
+            </a>
+
+            <ul class="navbar__links" id="navLinks">
+                <li><a href="#hero" class="navbar__link is-active">Home</a></li>
+                <li><a href="#about" class="navbar__link">About</a></li>
+                <li><a href="#skills" class="navbar__link">Skills</a></li>
+                <li><a href="#projects" class="navbar__link">Projects</a></li>
+                <li><a href="#experience" class="navbar__link">Experience</a></li>
+                <li><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+                <li><a href="#contact" class="navbar__link">Contact</a></li>
+            </ul>
+
+            <button class="navbar__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===================== HERO ===================== -->
+        <section class="hero section" id="hero">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <span class="hero__badge reveal">
+                        <span class="hero__badge-dot"></span>
+                        Available for opportunities
+                    </span>
+
+                    <h1 class="hero__title reveal">
+                        <span class="hero__hello">Hi, saya</span>
+                        <span class="hero__name">Ilham Zhafir</span>
+                        <span class="hero__typewriter">
+                            <span id="typewriter"></span><span class="hero__cursor">|</span>
+                        </span>
+                    </h1>
+
+                    <p class="hero__tagline reveal">
+                        Membangun pengalaman digital cerdas dengan AI dan teknologi web modern.
+                    </p>
+
+                    <div class="hero__meta reveal">
+                        <span class="hero__meta-item">📍 Bandung, Indonesia</span>
+                    </div>
+
+                    <div class="hero__cta reveal">
+                        <a href="#projects" class="btn btn--primary">Lihat Project</a>
+                        <a href="#" class="btn btn--ghost" id="downloadResume">Download Resume</a>
+                    </div>
+                </div>
+
+                <div class="hero__visual reveal">
+                    <div class="hero__photo-wrap">
+                        <div class="hero__photo-glow"></div>
+                        <div class="hero__photo-ring"></div>
+                        <img src="assets/zhafir.jpg" alt="Foto Ilham Zhafir" class="hero__photo" />
+                        <span class="hero__float-chip hero__float-chip--1">⚡ AI Engineer</span>
+                        <span class="hero__float-chip hero__float-chip--2">🚀 Full Stack</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="hero__scroll" aria-label="Scroll ke bawah">
+                <span class="hero__scroll-mouse"></span>
+            </a>
+        </section>
+
+        <!-- ===================== ABOUT ===================== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">01 — About</span>
+                    <h2 class="section__title">Tentang Saya</h2>
+                </div>
+
+                <div class="about__grid">
+                    <div class="about__bio glass reveal">
+                        <p class="about__lead">
+                            Ilham Zhafir is a passionate full-stack AI engineer with expertise in
+                            frontend development, backend systems, cloud deployment, and
+                            AI-powered applications.
+                        </p>
+                        <p class="about__text">
+                            Zhafir specializes in building scalable web platforms, intelligent
+                            automation tools, and modern user experiences. Zhafir enjoys solving
+                            real-world problems through clean architecture and innovative
+                            technologies.
+                        </p>
+
+                        <ul class="about__highlights">
+                            <li><span class="about__highlight-icon">◆</span> Full-stack web platforms yang scalable</li>
+                            <li><span class="about__highlight-icon">◆</span> Intelligent automation & AI-powered tools</li>
+                            <li><span class="about__highlight-icon">◆</span> Clean architecture & modern UX</li>
+                        </ul>
+                    </div>
+
+                    <div class="about__stats">
+                        <div class="stat glass reveal">
+                            <span class="stat__num" data-count="5">0</span><span class="stat__suffix">+</span>
+                            <span class="stat__label">Tahun Pengalaman</span>
+                        </div>
+                        <div class="stat glass reveal">
+                            <span class="stat__num" data-count="40">0</span><span class="stat__suffix">+</span>
+                            <span class="stat__label">Project Selesai</span>
+                        </div>
+                        <div class="stat glass reveal">
+                            <span class="stat__num" data-count="20">0</span><span class="stat__suffix">+</span>
+                            <span class="stat__label">Happy Clients</span>
+                        </div>
+                        <div class="stat glass reveal">
+                            <span class="stat__num" data-count="15">0</span><span class="stat__suffix">+</span>
+                            <span class="stat__label">Teknologi Dikuasai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SKILLS ===================== -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">02 — Skills</span>
+                    <h2 class="section__title">Tech Stack &amp; Keahlian</h2>
+                </div>
+
+                <div class="skills__grid">
+                    <article class="skills__card glass reveal">
+                        <header class="skills__card-head">
+                            <span class="skills__icon">🎨</span>
+                            <h3 class="skills__cat">Frontend</h3>
+                        </header>
+                        <ul class="skills__list">
+                            <li class="skill" data-level="95"><span class="skill__name">React</span><span class="skill__val">95%</span><span class="skill__bar"><i style="--w:95%"></i></span></li>
+                            <li class="skill" data-level="92"><span class="skill__name">Next.js</span><span class="skill__val">92%</span><span class="skill__bar"><i style="--w:92%"></i></span></li>
+                            <li class="skill" data-level="94"><span class="skill__name">Tailwind CSS</span><span class="skill__val">94%</span><span class="skill__bar"><i style="--w:94%"></i></span></li>
+                            <li class="skill" data-level="90"><span class="skill__name">TypeScript</span><span class="skill__val">90%</span><span class="skill__bar"><i style="--w:90%"></i></span></li>
+                            <li class="skill" data-level="85"><span class="skill__name">Framer Motion</span><span class="skill__val">85%</span><span class="skill__bar"><i style="--w:85%"></i></span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skills__card glass reveal">
+                        <header class="skills__card-head">
+                            <span class="skills__icon">⚙️</span>
+                            <h3 class="skills__cat">Backend</h3>
+                        </header>
+                        <ul class="skills__list">
+                            <li class="skill" data-level="93"><span class="skill__name">Node.js</span><span class="skill__val">93%</span><span class="skill__bar"><i style="--w:93%"></i></span></li>
+                            <li class="skill" data-level="90"><span class="skill__name">Express.js</span><span class="skill__val">90%</span><span class="skill__bar"><i style="--w:90%"></i></span></li>
+                            <li class="skill" data-level="88"><span class="skill__name">Python</span><span class="skill__val">88%</span><span class="skill__bar"><i style="--w:88%"></i></span></li>
+                            <li class="skill" data-level="86"><span class="skill__name">FastAPI</span><span class="skill__val">86%</span><span class="skill__bar"><i style="--w:86%"></i></span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skills__card glass reveal">
+                        <header class="skills__card-head">
+                            <span class="skills__icon">🗄️</span>
+                            <h3 class="skills__cat">Database</h3>
+                        </header>
+                        <ul class="skills__list">
+                            <li class="skill" data-level="89"><span class="skill__name">PostgreSQL</span><span class="skill__val">89%</span><span class="skill__bar"><i style="--w:89%"></i></span></li>
+                            <li class="skill" data-level="87"><span class="skill__name">MongoDB</span><span class="skill__val">87%</span><span class="skill__bar"><i style="--w:87%"></i></span></li>
+                            <li class="skill" data-level="84"><span class="skill__name">Firebase</span><span class="skill__val">84%</span><span class="skill__bar"><i style="--w:84%"></i></span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skills__card glass reveal">
+                        <header class="skills__card-head">
+                            <span class="skills__icon">🤖</span>
+                            <h3 class="skills__cat">AI &amp; Cloud</h3>
+                        </header>
+                        <ul class="skills__list">
+                            <li class="skill" data-level="92"><span class="skill__name">OpenAI API</span><span class="skill__val">92%</span><span class="skill__bar"><i style="--w:92%"></i></span></li>
+                            <li class="skill" data-level="88"><span class="skill__name">LangChain</span><span class="skill__val">88%</span><span class="skill__bar"><i style="--w:88%"></i></span></li>
+                            <li class="skill" data-level="86"><span class="skill__name">Docker</span><span class="skill__val">86%</span><span class="skill__bar"><i style="--w:86%"></i></span></li>
+                            <li class="skill" data-level="83"><span class="skill__name">AWS</span><span class="skill__val">83%</span><span class="skill__bar"><i style="--w:83%"></i></span></li>
+                            <li class="skill" data-level="90"><span class="skill__name">Vercel</span><span class="skill__val">90%</span><span class="skill__bar"><i style="--w:90%"></i></span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROJECTS ===================== -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">03 — Projects</span>
+                    <h2 class="section__title">Project Pilihan</h2>
+                </div>
+
+                <div class="projects__grid">
+                    <article class="project glass reveal">
+                        <div class="project__media">
+                            <span class="project__media-emoji">🧠</span>
+                            <div class="project__overlay">
+                                <a href="https://github.com/ZhafirIlham" target="_blank" rel="noopener" class="project__icon-btn" aria-label="GitHub">GitHub</a>
+                                <a href="#" class="project__icon-btn project__icon-btn--demo" aria-label="Live Demo">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project__body">
+                            <h3 class="project__title">AI Task Manager</h3>
+                            <p class="project__desc">Aplikasi produktivitas cerdas dengan bantuan AI untuk melakukan prioritas dan penjadwalan tugas.</p>
+                            <ul class="project__tags">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>OpenAI API</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project glass reveal">
+                        <div class="project__media">
+                            <span class="project__media-emoji">💬</span>
+                            <div class="project__overlay">
+                                <a href="https://github.com/ZhafirIlham" target="_blank" rel="noopener" class="project__icon-btn" aria-label="GitHub">GitHub</a>
+                                <a href="#" class="project__icon-btn project__icon-btn--demo" aria-label="Live Demo">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project__body">
+                            <h3 class="project__title">Smart Chat Assistant</h3>
+                            <p class="project__desc">Chatbot AI real-time dengan conversational memory dan context management.</p>
+                            <ul class="project__tags">
+                                <li>Next.js</li>
+                                <li>FastAPI</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project glass reveal">
+                        <div class="project__media">
+                            <span class="project__media-emoji">📊</span>
+                            <div class="project__overlay">
+                                <a href="https://github.com/ZhafirIlham" target="_blank" rel="noopener" class="project__icon-btn" aria-label="GitHub">GitHub</a>
+                                <a href="#" class="project__icon-btn project__icon-btn--demo" aria-label="Live Demo">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project__body">
+                            <h3 class="project__title">DevOps Monitoring Dashboard</h3>
+                            <p class="project__desc">Dashboard monitoring server dan analitik secara real-time dengan grafik interaktif.</p>
+                            <ul class="project__tags">
+                                <li>React</li>
+                                <li>Express.js</li>
+                                <li>Docker</li>
+                                <li>Chart.js</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== EXPERIENCE ===================== -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">04 — Experience</span>
+                    <h2 class="section__title">Pengalaman Profesional</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__item reveal">
+                        <span class="timeline__dot"></span>
+                        <div class="timeline__card glass">
+                            <span class="timeline__period">2023 — Sekarang</span>
+                            <h3 class="timeline__role">Senior Full Stack Engineer</h3>
+                            <p class="timeline__company">Novatech Solutions</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item reveal">
+                        <span class="timeline__dot"></span>
+                        <div class="timeline__card glass">
+                            <span class="timeline__period">2021 — 2023</span>
+                            <h3 class="timeline__role">Frontend Developer</h3>
+                            <p class="timeline__company">PixelForge Labs</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item reveal">
+                        <span class="timeline__dot"></span>
+                        <div class="timeline__card glass">
+                            <span class="timeline__period">2019 — 2021</span>
+                            <h3 class="timeline__role">Junior Software Engineer</h3>
+                            <p class="timeline__company">CloudNest AI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TESTIMONIALS ===================== -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">05 — Testimonials</span>
+                    <h2 class="section__title">Apa Kata Mereka</h2>
+                </div>
+
+                <div class="testimonials__grid">
+                    <figure class="testimonial glass reveal">
+                        <span class="testimonial__quote">&ldquo;</span>
+                        <blockquote class="testimonial__text">
+                            Zhafir is an exceptional engineer who consistently delivers beyond expectations. His ability to bridge AI capabilities with practical user needs is remarkable. He transformed our platform's intelligence layer in a way that measurably improved user engagement.
+                        </blockquote>
+                        <figcaption class="testimonial__author">
+                            <span class="testimonial__avatar">AF</span>
+                            <span class="testimonial__meta">
+                                <strong>Ahmad Fauzi</strong>
+                                <small>CTO, Prestasi Junior Indonesia</small>
+                            </span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="testimonial glass reveal">
+                        <span class="testimonial__quote">&ldquo;</span>
+                        <blockquote class="testimonial__text">
+                            Working with Zhafir was a pleasure. He has a rare talent for turning complex data into clear, actionable insights. His dashboards became the go-to tool for our entire leadership team, and he always brought ideas that went far beyond the initial brief.
+                        </blockquote>
+                        <figcaption class="testimonial__author">
+                            <span class="testimonial__avatar">SR</span>
+                            <span class="testimonial__meta">
+                                <strong>Siti Rahayu</strong>
+                                <small>Product Manager, PT Indo</small>
+                            </span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="testimonial glass reveal">
+                        <span class="testimonial__quote">&ldquo;</span>
+                        <blockquote class="testimonial__text">
+                            Zhafir's technical depth combined with his product mindset makes him stand out. He delivered a full-stack AI feature in record time without compromising code quality. I'd recommend him without hesitation to any team looking for a high-impact engineer.
+                        </blockquote>
+                        <figcaption class="testimonial__author">
+                            <span class="testimonial__avatar">BS</span>
+                            <span class="testimonial__meta">
+                                <strong>Budi Santoso</strong>
+                                <small>Lead Engineer, PT. Technesia</small>
+                            </span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTACT ===================== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">06 — Contact</span>
+                    <h2 class="section__title">Mari Berkolaborasi</h2>
+                </div>
+
+                <div class="contact__grid">
+                    <div class="contact__info reveal">
+                        <p class="contact__lead">Punya proyek menarik atau peluang kerja sama? Kirimkan pesan, saya akan segera membalas.</p>
+                        <ul class="contact__list">
+                            <li><span class="contact__ico">✉️</span><a href="mailto:ilhamzhafir@gmail.com">ilhamzhafir@gmail.com</a></li>
+                            <li><span class="contact__ico">📞</span><a href="tel:087722728570">087722728570</a></li>
+                            <li><span class="contact__ico">📍</span><span>Bandung, Indonesia</span></li>
+                        </ul>
+                        <div class="contact__socials">
+                            <a href="https://github.com/ZhafirIlham" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                            <a href="https://linkedin.com/in/ilham-zhafir" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                            <a href="https://x.com/IlhamZhafir" target="_blank" rel="noopener" aria-label="Twitter/X">X</a>
+                            <a href="https://instagram.com/ilhamzhafir/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+                        </div>
+                        <div class="contact__map">
+                            <iframe title="Lokasi Bandung, Indonesia" src="https://www.openstreetmap.org/export/embed.html?bbox=107.5566%2C-6.9736%2C107.6566%2C-6.8736&amp;layer=mapnik" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <form class="contact__form glass reveal" id="contactForm" novalidate>
+                        <div class="field">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required minlength="2" />
+                            <span class="field__error" data-for="name"></span>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+                            <span class="field__error" data-for="email"></span>
+                        </div>
+                        <div class="field">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..." required minlength="10"></textarea>
+                            <span class="field__error" data-for="message"></span>
+                        </div>
+                        <button type="submit" class="btn btn--primary contact__submit">Kirim Pesan</button>
+                        <p class="contact__feedback" id="formFeedback" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <span class="navbar__logo">IZ</span>
+                <div>
+                    <strong class="footer__name">Ilham Zhafir</strong>
+                    <p class="footer__role">Full Stack AI Engineer</p>
+                </div>
+            </div>
+
+            <nav class="footer__nav" aria-label="Footer">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="footer__socials">
+                <a href="https://github.com/ZhafirIlham" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/ilham-zhafir" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://x.com/IlhamZhafir" target="_blank" rel="noopener">X</a>
+                <a href="https://instagram.com/ilhamzhafir/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; <span id="year"></span> Ilham Zhafir. All rights reserved.</p>
+        </div>
+
+        <button class="footer__top" id="scrollTop" aria-label="Kembali ke atas">↑</button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/particles.js" defer></script>
+    <script src="js/typewriter.js" defer></script>
+    <script src="js/contact.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
